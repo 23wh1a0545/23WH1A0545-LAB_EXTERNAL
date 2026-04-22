@@ -33,15 +33,25 @@ async function seedSampleNotes() {
         category: 'General',
       },
       {
-        title: 'Shopping List',
-        content: 'Milk, Bread, Eggs, Coffee, and a bar of dark chocolate.',
-        category: 'Personal',
+        title: 'FSD PROJECT',
+        content: 'Implement the frontend and backend for the FSD project.',
+        category: 'College Work',
       },
       {
         title: 'MERN Lab Exam',
         content: 'Remember to implement POST, PUT, and DELETE APIs during the lab.',
         category: 'Work',
       },
+      {
+        title: 'Grocery List',
+        content: 'Milk, Bread, Eggs, Butter',
+        category: 'Personal',
+      },
+      {
+        title: 'Meeting Notes',
+        content: 'Discuss project milestones and deadlines with the team.',
+        category: 'Work',
+      }
     ];
 
     const inserted = await Note.insertMany(sampleNotes);
@@ -68,3 +78,4 @@ async function start() {
 }
 
 start();
+
